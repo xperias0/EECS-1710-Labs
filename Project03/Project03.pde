@@ -1,9 +1,12 @@
+ /*
+  Credit:
+  rainbow.jpg:https://www.rgbstock.com/
+  class Rain base on: https://www.youtube.com/watch?v=KkyIDI6rQJI , and made changes on it.
+  */
   PImage rainbow;
- 
   float sizeX ;
   float sizeY ;
-  float x;
-  float y;
+
   float textY=250;
   int index;
   String c;
@@ -42,15 +45,14 @@ void draw(){
  sizeX = 15;
  sizeY = map(mouseY,0,height,0,40);
  if(index==0){
- for(int i=0;i<=600;i++){
-   x=random(width);
-   y=random(height);
+ for(int i=0;i<=300;i++){
+  float  x=random(width);
+  float y=random(height);
  color c = rainbow.get((int)x,(int)y);
  noStroke();
  fill(c);
  ellipse(x,y,sizeX,sizeY);
  }
- 
  
  }
  
@@ -94,8 +96,6 @@ p[i].fall();
 
 if(index==1){
   
-  
-  
  for(int j=0;j<s.length;j++){
 s[j].fall();
 s[j].move();
@@ -104,9 +104,6 @@ s[j].ground();
 }
  
 
- 
-  
-  
   }
   
   

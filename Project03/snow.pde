@@ -25,21 +25,17 @@ if(y>st){
  c= rainbow.get((int)x,(int)y);
 }
  
-
 noStroke();
 fill(c);
 ellipse(x+f,y,size,size);
-
-
-
 
 
 }
 
 void move(){
   al+=0.008;
-thick-=0.01;
-x+=f;
+  thick-=0.01;
+  x+=f;
 }
 
 
